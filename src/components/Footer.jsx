@@ -96,15 +96,6 @@ function Footer() {
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
               </a>
-              <a
-                href="#"
-                onClick={handlePlaceholderClick}
-                className="hover:text-[#088178] dark:hover:text-[#0bd1c3] transition-all duration-200 transform hover:-translate-y-1"
-              >
-                <svg className="w-5.5 h-5.5 fill-current" viewBox="0 0 24 24">
-                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93 .502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z" />
-                </svg>
-              </a>
             </div>
           </div>
         </div>
@@ -233,13 +224,26 @@ function Footer() {
       </div>
 
       {/* Corporate Compliance Disclaimer Footer */}
-      <div className="w-full pt-6 border-t border-zinc-200 dark:border-zinc-800 text-center text-zinc-500 dark:text-zinc-500 text-sm font-medium">
+      <div className="w-full pt-6 border-t border-zinc-200 dark:border-zinc-800 text-zinc-500 dark:text-zinc-500 text-sm font-medium flex flex-col md:flex-row justify-between items-center gap-2">
+        {/* Left Side: Copyright Text */}
         <p className="tracking-wide">
           &copy; {currentYear},{" "}
           <span className="text-[#088178] dark:text-[#0bd1c3] font-bold">
             CARA
           </span>{" "}
           — Ecommerce. All rights reserved.
+        </p>
+
+        <p className="text-xm text-zinc-400 dark:text-zinc-500">
+          Available on{" "}
+          <a
+            href="https://www.codester.com/items/67173/mern-stack-clothing-e-commerce-platform?ref=wad10"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#088178] dark:text-[#0bd1c3] underline underline-offset-2 hover:opacity-80 transition-opacity"
+          >
+            Codester
+          </a>
         </p>
       </div>
     </footer>
