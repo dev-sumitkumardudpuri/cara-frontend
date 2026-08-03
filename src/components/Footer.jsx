@@ -234,7 +234,7 @@ function Footer() {
           — Ecommerce. All rights reserved.
         </p>
 
-        <p className="text-xm text-zinc-400 dark:text-zinc-500">
+        {/* <p className="text-xm text-zinc-400 dark:text-zinc-500">
           Available on{" "}
           <a
             href="https://www.codester.com/items/67173/mern-stack-clothing-e-commerce-platform?ref=wad10"
@@ -244,7 +244,7 @@ function Footer() {
           >
             Codester
           </a>
-        </p>
+        </p> */}
       </div>
     </footer>
   );
